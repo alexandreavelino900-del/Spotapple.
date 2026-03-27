@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Player de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <h2 id="track-title">Nome da Música</h2>
+        <p id="quality-display">Qualidade: --</p>
+        
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play-pause">▶️</button>
+            <button id="next">⏭</button>
+        </div>
+
+        <div class="user-panel">
+            <button onclick="setPlan('free')">Plano Grátis</button>
+            <button onclick="setPlan('premium')">Seja Premium</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
