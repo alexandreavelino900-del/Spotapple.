@@ -34,3 +34,22 @@ function setPlan(plan) {
 
 // Iniciar o player
 updatePlayer();
+// Adicione estas funções ao seu script.js
+
+function changeTheme(themeName) {
+    // Se o tema não for o padrão e o usuário NÃO for premium
+    if (themeName !== 'default' && !isPremium) {
+        alert("❌ Este tema é exclusivo para assinantes Premium!");
+        return;
+    }
+
+    // Remove temas anteriores
+    document.body.classList.remove('theme-gold', 'theme-cyber');
+
+    // Aplica o novo tema (se não for o default)
+    if (themeName !== 'default') {
+        document.body.classList.add('theme-' + themeName);
+    }
+    
+    console.log("Tema aplicado: " + themeName);
+}
