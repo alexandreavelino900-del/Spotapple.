@@ -1,0 +1,51 @@
+/* Variáveis padrão (Tema Grátis - Escuro Simples) */
+:root {
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --text-color: #ffffff;
+    --accent-color: #1db954; /* Verde */
+}
+
+/* Tema Premium: Gold (Ouro) */
+body.theme-gold {
+    --bg-color: #1a1a1a;
+    --card-color: #2c2c2c;
+    --accent-color: #ffd700;
+}
+
+/* Tema Premium: Cyberpunk (Rosa/Azul) */
+body.theme-cyber {
+    --bg-color: #0d0015;
+    --card-color: #1a0029;
+    --accent-color: #ff00ff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid var(--accent-color);
+    width: 80%;
+}
+
+button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
